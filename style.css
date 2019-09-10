@@ -1,0 +1,143 @@
+/* GENERAL PROPERTIES */
+
+* {
+    margin: 0;
+    padding: 0;
+    --color-bg: #FAF8F9;
+    --color-text1: #29170a;
+    --color-text2:rgb(243, 217, 170);
+    --color-text3:rgb(252, 239, 215);
+}
+
+body {
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.section-main,
+.section-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* MAIN SECTION */
+
+.section-main {
+    justify-content: space-between;
+    background-image: url(./wine.jpg);
+    background-size: 2500px;
+    padding: 0 5em;
+}
+
+.section-main h1 {
+    font-size: 5rem;
+    color: var(--color-text3);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.section-main h2 {
+    font-size: 3rem;
+    color: var(--color-text2);
+}
+
+.section-main h3 {
+    order: -2;
+    padding: 0.5em 0;
+    margin-bottom: 2em;
+    font-size: 1.8rem;
+    border-top: 10px solid var(--color-text2);
+    color: var(--color-text2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.section-main-title-container {
+    margin-bottom: 45%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* REGISTER SECTION */
+
+.section-register {
+    justify-content: center; 
+    background: var(--color-bg);
+    width: 70%;
+    padding: 3em;
+}
+
+h3,
+p {
+    margin-bottom: 2em;
+}
+
+.section-register h2 {
+    font-size: 4rem;
+    color: #251509;
+    font-weight: 300;
+}
+
+.section-register h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-register p {
+    padding: 0 2em;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1800px) {
+    body {
+        flex-direction: column;
+    }
+
+    .section-main {
+        margin-bottom: 4em;
+        background-size: 1500px;
+    }
+
+    .section-main h1 {
+        font-size: 4rem;
+    }
+
+    .section-main h2 {
+        font-size: 3rem;
+        padding: 0 2em;
+    }
+
+    .section-register {
+        padding: 0;
+        width: auto;
+    }
+
+    .section-register h2 {
+        font-size: 3rem;
+    }
+}
+
+
