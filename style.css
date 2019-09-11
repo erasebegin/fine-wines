@@ -153,10 +153,10 @@ button:focus {
 
     .section-main {
         align-items: space-between; 
-        margin-bottom: 4em;
         background-size: 800px;
-        height: 600px;
+        height: 500px;
         padding: 0 1em;
+        border:1px dashed red;
     }
 
     .section-main h1 {
@@ -177,6 +177,7 @@ button:focus {
     }
 
     .section-register h2 {
+        margin-top: 2em;
         font-size: 2rem;
     }
 
