@@ -156,7 +156,6 @@ button:focus {
         background-size: 800px;
         height: 500px;
         padding: 0 1em;
-        border:1px dashed red;
     }
 
     .section-main h1 {
