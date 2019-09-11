@@ -178,6 +178,7 @@ button:focus {
     .section-register h2 {
         margin-top: 2em;
         font-size: 2rem;
+        padding: 0 1em;
     }
 
     .section-register h3 {
