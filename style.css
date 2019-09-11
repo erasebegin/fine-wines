@@ -7,6 +7,7 @@
     --color-text1: #29170a;
     --color-text2:rgb(243, 217, 170);
     --color-text3:rgb(252, 239, 215);
+    --color-accent: #5c081a;
 }
 
 body {
@@ -30,27 +31,28 @@ body {
 .section-main {
     justify-content: space-between;
     background-image: url(./wine.jpg);
-    background-size: 2500px;
+    background-size: 1300px;
     padding: 0 5em;
 }
 
 .section-main h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--color-text3);
     font-weight: 300;
     margin-bottom: 1em;
 }
 
 .section-main h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--color-text2);
+    margin-bottom: 2em;
+    text-shadow: 1px 1px 4px black;
 }
 
 .section-main h3 {
     order: -2;
     padding: 0.5em 0;
-    margin-bottom: 2em;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border-top: 10px solid var(--color-text2);
     color: var(--color-text2);
     font-weight: 700;
@@ -60,7 +62,7 @@ body {
 }
 
 .section-main-title-container {
-    margin-bottom: 45%;
+    margin-bottom: 5em;
 }
 
 strong {
@@ -73,7 +75,7 @@ strong {
 .section-register {
     justify-content: center; 
     background: var(--color-bg);
-    width: 70%;
+    /* width: 70%; */
     padding: 3em;
 }
 
@@ -83,21 +85,22 @@ p {
 }
 
 .section-register h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #251509;
     font-weight: 300;
     margin-bottom: 1em;
 }
 
 .section-register h3 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     text-transform: uppercase;
+    color: var(--color-accent)
 }
 
 .section-register p {
     padding: 0 2em;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 3em;
@@ -107,49 +110,63 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-family: inherit;
 }
 
 input {
     border: 0;
     min-height: 4em;
-    min-width: 40em;
     margin-bottom: 2.5em;
+    min-width: 25vw;
+    text-align: inherit;
+    padding: .25em;
 }
 
 button {
-    background: #410b17;
+    background: var(--color-accent);
     color: white;
     border: 0;
     border-radius: 5px;
     padding: 1em;
     align-self: center;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
+    text-transform: uppercase;
+}
+
+button:hover, 
+button:focus {
+    filter: brightness(120%);
 }
 
 
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1800px) {
+@media (max-width: 800px) {
     body {
         flex-direction: column;
     }
 
     .section-main {
+        align-items: space-between; 
         margin-bottom: 4em;
-        background-size: 1500px;
-        height: 40vh;
+        background-size: 800px;
+        height: 600px;
+        padding: 0 1em;
     }
 
     .section-main h1 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .section-main h2 {
-        font-size: 3rem;
-        padding: 0 2em;
+        font-size: 2rem;
+    }
+
+    .section-main h3 {
+        font-size: 1rem;
     }
 
     .section-register {
@@ -158,7 +175,19 @@ button {
     }
 
     .section-register h2 {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    .section-register h3 {
+        font-size: 1.8rem;
+    }
+
+    .section-register p {
+        font-size: 1.3rem;
+    }
+
+    input {
+        min-width: 75vw;
     }
 
     button {
