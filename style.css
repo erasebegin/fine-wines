@@ -133,13 +133,12 @@ button {
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: filter 0.25s;
 }
 
 button:hover, 
 button:focus {
-    filter: brightness(120%);
-    transition: 0.5s;
+    filter: brightness(140%);
 }
 
 
