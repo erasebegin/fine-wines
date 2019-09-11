@@ -30,7 +30,7 @@ body {
 
 .section-main {
     justify-content: space-between;
-    background-image: url(./wine.jpg), black;
+    background-image: url(https://i.ibb.co/TTpzT93/wine.jpg), black;
     background-size: 1300px;
     padding: 0 5em;
 }
