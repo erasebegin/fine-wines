@@ -30,8 +30,10 @@ body {
 
 .section-main {
     justify-content: space-between;
-    background-image: url(https://i.ibb.co/TTpzT93/wine.jpg), black;
+    background-image: url(https://i.ibb.co/TTpzT93/wine.jpg);
     background-size: 1300px;
+    background-position-x: left;
+    background-color: var(--color-text1);
     padding: 0 5em;
 }
 
@@ -75,7 +77,6 @@ strong {
 .section-register {
     justify-content: center; 
     background: var(--color-bg);
-    /* width: 70%; */
     padding: 3em;
 }
 
@@ -114,12 +115,18 @@ form {
 }
 
 input {
-    border: 0;
-    min-height: 4em;
     margin-bottom: 2.5em;
-    min-width: 25vw;
+    min-width: 20vw;
+    height: 3em;
     text-align: inherit;
-    padding: .25em;
+    background: rgb(255, 244, 249);
+    border: 1px solid rgb(70, 18, 18);
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: var(--color-text1);
+    filter: opacity(0.3);
 }
 
 button {
@@ -189,11 +196,12 @@ button:focus {
     }
 
     input {
-        min-width: 75vw;
+        min-width: 60vw;
     }
 
     button {
         margin-bottom: 10em;
+        /* transform: scale(0.8); */
     }
 
 }
