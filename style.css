@@ -100,7 +100,7 @@ p {
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.5;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 form {
@@ -113,11 +113,11 @@ input {
     border: 0;
     min-height: 4em;
     min-width: 40em;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
 button {
-    background: #251509;
+    background: #410b17;
     color: white;
     border: 0;
     border-radius: 5px;
